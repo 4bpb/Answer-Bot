@@ -1,10 +1,10 @@
 # ANSWER-BOT
  Searches a question and cross references provided answers to look for occurences
 
+## PREVIEW
+![Gif of ANSWER-BOT](https://i.imgur.com/SGBnV3r.gif)
 
-
-
- ## FEATURES
+ ### FEATURES
     * Quizlet Only Mode *Bypasses CloudFlare*
     * 10000 MS Timeout
     * Follows up to 20 Redirects
@@ -12,11 +12,11 @@
 
 
 
-### CREATE YOUR OWN BUILD
+#### CREATE YOUR OWN BUILD
     1. Download Repo
     2. CD to the Folder and go into SRC
     3. Run the Following Commands
         - Npm install
         - Npm start
-        ``` Npm run make```
+        - Npm run make
     4. Enjoy
