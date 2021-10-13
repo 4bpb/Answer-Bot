@@ -1,0 +1,80 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel = "icon" href = 
+    "./src/assets/icon.icns" 
+            type = "image/x-icon">
+    <title>Answer Bot</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJ4BV5YMXL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VJ4BV5YMXL');
+</script>
+  </head>
+  <body>
+
+
+<div class="switch-div">
+  <h4>Quizlet Only: </h4>
+  <label class="switch" for="Quizlet">
+    <input type="checkbox" id="Quizlet">
+    <span class="slider round"></span>
+  </label>
+</div>
+    
+
+
+
+
+
+    <form id="frm1" action="/action_page.php">
+      Question: <input type="text" id="Question"name=" "><br><br>
+      Answer 1 : <input type="text" id="Answer 1" name=" "><br><br>
+      Answer 2 : <input type="text" id="Answer 2" name=" "><br><br>
+      Answer 3 : <input type="text" id="Answer 3" name=" "><br><br>
+      Answer 4 : <input type="text" id="Answer 4" name=" "><br><br>
+      <input type="button" id="submitQuestion" value="Submit">
+      <p id="AnswerFromGoogle"></p>
+    </form>
+
+
+
+
+
+    <h5>Created By <a href="https://github.com/4bpb">Me</a></h5>
+    <script>
+      let question = document.getElementById("Question")
+      let answer_1 = document.getElementById("Answer 1")
+      let answer_2 = document.getElementById("Answer 2")
+      let answer_3 = document.getElementById("Answer 3")
+      let answer_4 = document.getElementById("Answer 4")
+      
+      question.addEventListener('input', resizeInput);
+      answer_1.addEventListener('input', resizeInput);
+      answer_2.addEventListener('input', resizeInput);
+      answer_3.addEventListener('input', resizeInput);
+      answer_4.addEventListener('input', resizeInput);
+      resizeInput.call(input);
+
+    function resizeInput() {
+      this.style.width = 20 + "ch";
+      if(this.value.length<20){
+        this.style.width = 20 + "ch";
+      } else if (this.value.length>40){
+        this.style.width = 55 + "ch";
+      }
+    }
+    </script>
+    
+  </body>
+  
+</html>
