@@ -16,7 +16,7 @@
     1. Download Repo
     2. CD to the Folder and go into SRC
     3. Run the Following Commands
-        - ```Npm install```
-        - ``Npm start``
-        - Npm run make
+        - Npm install
+        - Npm start
+        ``` Npm run make```
     4. Enjoy
